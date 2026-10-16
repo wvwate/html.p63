@@ -1,0 +1,5 @@
+вступ до html
+
+
+git config --global user.name "wwwate_006"
+git config --global user.email "999wwwate@gmail.com"
