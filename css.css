@@ -1,0 +1,22 @@
+*{color:#333;
+}
+img{
+    width: 30px
+}
+
+h1{
+    text-align: center;
+}
+
+.middle {
+    vertical-align: middle;
+}
+.celector-table {
+    border:2px solid lightgrey;
+    border-collapse: collapse;
+}
+
+
+.celector-table th, .celector-table td{
+    border:1px solid lightgrey;
+}
