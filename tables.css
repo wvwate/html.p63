@@ -12,3 +12,9 @@
 .product-table td:nth-child(3){/*:nth-child n-й елемент (3 - кожен третий)*/
     text-align:right;
 }
+.product-table tbody tr:nth-child(odd){/*odd - непарні елементи*/
+    background-color:#fafafa
+}
+.product-table tfoot tr:nth-child(even){/*odd - непарні елементи*/
+    background-color:#f0f0f0
+}
