@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>каскадні таблиці стилів: CSS</title>
+<style>
+  body { font-family: "Times New Roman", serif; color: #222; margin: 0; }
+  h1 { text-align: center; }
+  pre { font-size: 13px; margin-left: 50px; }
+
+  /* селектор елемента: таблиця і клітинки */
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #999; padding: 4px 8px; text-align: left; }
+
+  /* селектор нащадка: тільки th всередині .selector-table */
+  .selector-table th { background: #333; color: #fff; text-align: center; }
+
+  /* селектор :nth-child - рядки за порядковим номером */
+  .selector-table tr:nth-child(2) { background: #ffd6d6; }   /* червоний */
+  .selector-table tr:nth-child(3) { background: #ffe9c2; }   /* помаранчевий */
+  .selector-table tr:nth-child(4) { background: #fff7b3; }   /* жовтий */
+  .selector-table tr:nth-child(5) { background: #cdf5cd; }   /* зелений */
+
+  /* селектор класу - рядок з класом */
+  .selector-table tr.blue { background: #cfe4ff; }           /* блакитний */
+
+  /* селектор id - один унікальний рядок */
+  #last-row { background: #e4d4ff; }                         /* фіолетовий */
+
+  /* псевдоклас :hover - рядок при наведенні мишки */
+  .selector-table tr:hover td { background: rgba(0, 0, 0, 0.12); }
+</style>
+</head>
+<body>
+
+<h1>каскадні таблиці стилів: CSS</h1>
+
+<p>рекомендований спосіб додавати стилі для всього сайту - це окремий файл, що підключається за допомогою тегу link у заголовку сторінки. кожна команда CSS-файлу має структуру:</p>
+
+<pre>
+селектор {
+  властивість: значення;
+}
+</pre>
+
+<p>термін "каскадний" означає, що наступна команда може поєднуватись з попередньою.</p>
+
+<h2>основні селектори</h2>
+
+<table class="selector-table">
+  <tr><th>селектор</th><th>значення</th></tr>
+  <tr><td>*</td><td>всі елементи (рядок: червоний, :nth-child(2))</td></tr>
+  <tr><td>img</td><td>всі елементи що мають тег &lt;img/&gt; (рядок: помаранчевий, :nth-child(3))</td></tr>
+  <tr><td>.middle</td><td>всі елементи в яких зазначено class="middle" (рядок: жовтий, :nth-child(4))</td></tr>
+  <tr><td>.selector-table th</td><td>всі елементи &lt;th&gt; всередині елементів з class="selector-table" (рядок: зелений, :nth-child(5))</td></tr>
+  <tr class="blue"><td>.blue</td><td>всі елементи з класом "blue" (рядок: блакитний, селектор класу)</td></tr>
+  <tr id="last-row"><td>#last-row</td><td>єдиний елемент з id="last-row" (рядок: фіолетовий, селектор id)</td></tr>
+</table>
+
+<h2>як це зроблено</h2>
+
+<p>кожен рядок має свій колір завдяки різним селекторам: перші чотири рядки вибираються за порядковим номером через <code>:nth-child()</code>, п'ятий - через клас <code>.blue</code>, шостий - через унікальний <code>id</code>. при наведенні мишки рядок темнішає (<code>:hover</code>).</p>
+
+</body>
+</html>
