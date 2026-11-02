@@ -7,9 +7,48 @@
     <style>
         .battery{
             border:2px solid darkgrey;
-            width:150px;
             height:30px;
+            margin-top: 10px;
+            position: relative;
+            width:150px;
         }
+        .battery::after{
+            background-color: darkgrey;
+            content: "";
+            position: absolute;
+            height :20px;
+            right: -12px;
+            top:10px;
+            width: 10px;
+        }
+        .battery::after{
+            background-color:green;
+            content:"";
+            position: absolute;
+            display:block;
+            height: 100%;
+            width: 100%
+        }
+     .middle::before{
+        background-color:gold;
+        content:"";
+        position: absolute;
+        display:block;
+        height: 100%;
+        width: 100%
+     }
+     .full::before,.middle::before{
+        content:"";
+        display:block;
+        position: absolute;
+        height: 100%;
+        width: 100%
+     }
+    
+        
+            
+        
+
     </style>
 </head>
 <body>
@@ -17,8 +56,11 @@
     <p>
         окрім псвдокласів,які задають стили в різному стані елементів,
         існують псевдоелементи, які дозволяють розширити будову даного
-        елементу.
+        елементу.назви псевдомеелемнтів починаються з двох двокрапок,наприклад,::before,::after. в їх стилях обов.язково
+         вказуеться властивисть content, яка визначаэ вміст псевдоелемента. 
+         частише за все,ця властивисть лишаеться порожнею.
     </p>
-    <div class="battery"></div>
+    <div class="battery full"></div>
+    <div class="middle:before"></div>
 </body>
 </html>
