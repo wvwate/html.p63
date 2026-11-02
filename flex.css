@@ -1,0 +1,13 @@
+.conteiner{
+    border: 2px solid salmon;
+    display:flex;/*режим флекс-контейнера*/
+}
+.item{
+    background-color: tomato;
+    border:2px solid maroon;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}

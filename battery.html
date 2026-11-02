@@ -5,12 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pseudo elements</title>
     <style>
-        .battery{
-            border:2px solid darkgrey;
-            width:150px;
-            height:30px;
-        }
-    </style>
+
+  .battery {
+    border: 2px solid darkgrey;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .battery::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 8px;
+    width: 6px;
+    height: 14px;
+    background: darkgrey;
+  }
+  .full::before, .middle::before, .low::before {
+    content: "";
+    display: block;
+    height: 90%;
+    left: 3px;
+    position: absolute;
+    top: 5%;
+    z-index: -1;
+  }
+  .full::before {
+    background-color: lightgreen;
+    width: calc(100% - 6px);
+  }
+  .middle::before {
+    background-color: gold;
+    width: 50%;
+  }
+  .low::before {
+    background-color: red;
+    width: 25%;
+  }
+</style>
+
+<div class="battery full"></div>
+<div class="battery middle"></div>
+<div class="battery low"></div>
+
 </head>
 <body>
     <h1>псевдо елементи</h1>
@@ -19,6 +58,6 @@
         існують псевдоелементи, які дозволяють розширити будову даного
         елементу.
     </p>
-    <div class="battery"></div>
+    
 </body>
 </html>
