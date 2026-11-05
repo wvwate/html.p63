@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elements</title>
+    <style>
+<<<<<<< HEAD
+
+  .battery {
+    border: 2px solid darkgrey;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .battery::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 8px;
+    width: 6px;
+    height: 14px;
+    background: darkgrey;
+  }
+  .full::before, .middle::before, .low::before {
+    content: "";
+    display: block;
+    height: 90%;
+    left: 3px;
+    position: absolute;
+    top: 5%;
+    z-index: -1;
+  }
+  .full::before {
+    background-color: lightgreen;
+    width: calc(100% - 6px);
+  }
+  .middle::before {
+    background-color: gold;
+    width: 50%;
+  }
+  .low::before {
+    background-color: red;
+    width: 25%;
+  }
+</style>
+
+<div class="battery full"></div>
+<div class="battery middle"></div>
+<div class="battery low"></div>
+
+=======
+        .battery{
+            border:2px solid darkgrey;
+            height:30px;
+            margin-top: 10px;
+            position: relative;
+            width:150px;
+        }
+        .battery::after{
+            background-color: darkgrey;
+            content: "";
+            position: absolute;
+            height :20px;
+            right: -12px;
+            top:10px;
+            width: 10px;
+        }
+        .battery::after{
+            background-color:green;
+            content:"";
+            position: absolute;
+            display:block;
+            height: 100%;
+            width: 100%
+        }
+     .middle::before{
+        background-color:gold;
+        content:"";
+        position: absolute;
+        display:block;
+        height: 100%;
+        width: 100%
+     }
+     .full::before,.middle::before{
+        content:"";
+        display:block;
+        position: absolute;
+        height: 100%;
+        width: 100%
+     }
+    
+        
+            
+        
+
+    </style>
+>>>>>>> 4ecdc3b2aea3c022a96b152f37390992bc8bcb1c
+</head>
+<body>
+    <h1>псевдо елементи</h1>
+    <p>
+        окрім псвдокласів,які задають стили в різному стані елементів,
+        існують псевдоелементи, які дозволяють розширити будову даного
+        елементу.назви псевдомеелемнтів починаються з двох двокрапок,наприклад,::before,::after. в їх стилях обов.язково
+         вказуеться властивисть content, яка визначаэ вміст псевдоелемента. 
+         частише за все,ця властивисть лишаеться порожнею.
+    </p>
+<<<<<<< HEAD
+    
+=======
+    <div class="battery full"></div>
+    <div class="middle:before"></div>
+>>>>>>> 4ecdc3b2aea3c022a96b152f37390992bc8bcb1c
+</body>
+</html>

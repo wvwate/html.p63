@@ -1,0 +1,34 @@
+.container{
+    border: 2px solid salmon;
+    display:flex;/*режим флекс-контейнера*/
+    height: 150px;
+}
+
+.h-150{
+    height: 150px;
+}
+
+.item{
+    background-color: tomato;
+    border:2px solid maroon;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+.j-center{
+    justify-content: center;
+}
+.j-between{
+    justify-content: space-between;
+}
+.j-evenly{
+    justify-content: space-evenly;
+}
+.j-around{
+    justify-content: space-around;
+}
+.a-center{
+    align-items: center;
+}

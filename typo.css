@@ -1,0 +1,52 @@
+body {
+    margin: auto;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.roboto-regular {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 16pt;
+    font-style: normal;
+    font-variation-settings: "wdth" 80;
+    line-height: 1.5;
+
+.display-large {
+  font-size:41pt;
+  font-weight:400;
+  font-variation-settings: "wdth" 75;
+}
+}
+.display-medium{
+  font-size: 26pt;
+  font-weight:400;
+}
+button{
+  background-color:burlywood;
+  font-size:16pt;
+  padding: .5em 1em;
+}
+
+button:hover {/*базовий стиль - для всіх станів*/
+background-color:burlywood;
+}
+button:focus {/*базовий стиль - для всіх станів*/
+background-color:rgb(26,109,50)
+}
+#agree{/* з символу # починається стилі для атрибута id="agree"...)*/
+  margin-right: 1em;
+transform:scale(1.5);
+}
+#agree ~ label{/*~ - наступний елемент за даними (з тегом label)*/
+  color:red;
+
+}
+#agree:checked ~ label{/*~ - наступний елемент за даними (з тегом label)*/
+  color:green;
+
+}
+#agree:hover ~ label {/*базовий стиль - для всіх станів*/
+background-color:black
+}
