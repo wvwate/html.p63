@@ -1,0 +1,156 @@
+\<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форми HTML</title>
+</head>
+<body>
+    <h1>форми HTML</h1>
+    <p>
+        форми - "форми зворотного зв'язку" - спеціальні елементи, які дозволяють вводити дані користувачеві
+        та передавати їх до серверної частини сайту. форма задається тегом &lt;form&gt; і поєднує окремі
+        елементи, що будуть передані разом.
+    </p>
+
+    <h2>елементи форм</h2>
+
+    <form action="#" method="post">
+        <table border="1" cellpadding="6" cellspacing="0">
+            <tr>
+                <th>опис</th>
+                <th>елемент</th>
+                <th>тип (type)</th>
+            </tr>
+
+            <!-- Вже розглянуті -->
+            <tr>
+                <td>поле введення</td>
+                <td><input type="text" name="name"></td>
+                <td>text</td>
+            </tr>
+            <tr>
+                <td>спеціалізоване поле для E-mail</td>
+                <td><input type="email" name="email"></td>
+                <td>email</td>
+            </tr>
+            <tr>
+                <td>блок тексту</td>
+                <td><textarea name="message" rows="3" cols="20"></textarea></td>
+                <td>textarea</td>
+            </tr>
+            <tr>
+                <td>введення дати</td>
+                <td><input type="date" name="date"></td>
+                <td>date</td>
+            </tr>
+            <tr>
+                <td>вибір кольору</td>
+                <td><input type="color" name="color"></td>
+                <td>color</td>
+            </tr>
+            <tr>
+                <td>вибір файлу</td>
+                <td><input type="file" name="file"></td>
+                <td>file</td>
+            </tr>
+            <tr>
+                <td>прапорець</td>
+                <td><label><input type="checkbox" name="rules"> погоджуюсь з правилами</label></td>
+                <td>checkbox</td>
+            </tr>
+            <tr>
+                <td>перемикачі</td>
+                <td>
+                    <label><input type="radio" name="city" value="odesa"> одесса</label><br>
+                    <label><input type="radio" name="city" value="mykolaiv"> николаев</label><br>
+                    <label><input type="radio" name="city" value="vinnytsia"> вінниця</label>
+                </td>
+                <td>radio</td>
+            </tr>
+            <tr>
+                <td>випадаючий список</td>
+                <td>
+                    <select name="city2">
+                        <option>одесса</option>
+                        <option>николаев</option>
+                        <option>вінниця</option>
+                    </select>
+                </td>
+                <td>select</td>
+            </tr>
+            <tr>
+                <td>кнопка</td>
+                <td><button type="button">натисне мене</button></td>
+                <td>button</td>
+            </tr>
+            <tr>
+                <td>комплексна кнопка</td>
+                <td><button type="button"><b>замовити</b> H<sub>2</sub>O</button></td>
+                <td>button</td>
+            </tr>
+
+            <!-- Нові типи -->
+            <tr>
+                <td>пароль (символи приховані)</td>
+                <td><input type="password" name="password"></td>
+                <td>password</td>
+            </tr>
+            <tr>
+                <td>число</td>
+                <td><input type="number" name="number" min="0" max="100" value="0"></td>
+                <td>number</td>
+            </tr>
+            <tr>
+                <td>повзунок</td>
+                <td><input type="range" name="range" min="0" max="10" value="5"></td>
+                <td>range</td>
+            </tr>
+            <tr>
+                <td>телефон</td>
+                <td><input type="tel" name="tel" placeholder="+380..."></td>
+                <td>tel</td>
+            </tr>
+            <tr>
+                <td>посилання</td>
+                <td><input type="url" name="url" placeholder="https://"></td>
+                <td>url</td>
+            </tr>
+            <tr>
+                <td>пошук</td>
+                <td><input type="search" name="search"></td>
+                <td>search</td>
+            </tr>
+            <tr>
+                <td>час</td>
+                <td><input type="time" name="time"></td>
+                <td>time</td>
+            </tr>
+            <tr>
+                <td>дата і час</td>
+                <td><input type="datetime-local" name="datetime"></td>
+                <td>datetime-local</td>
+            </tr>
+            <tr>
+                <td>місяць</td>
+                <td><input type="month" name="month"></td>
+                <td>month</td>
+            </tr>
+            <tr>
+                <td>тиждень</td>
+                <td><input type="week" name="week"></td>
+                <td>week</td>
+            </tr>
+            <tr>
+                <td>кнопка скидання форми</td>
+                <td><input type="reset" value="очистити"></td>
+                <td>reset</td>
+            </tr>
+            <tr>
+                <td>кнопка відправки форми</td>
+                <td><input type="submit" value="надіслати"></td>
+                <td>submit</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html
