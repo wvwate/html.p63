@@ -1,4 +1,4 @@
-.conteiner{
+.container{
     border: 2px solid salmon;
     display:flex;/*режим флекс-контейнера*/
 }
@@ -10,4 +10,23 @@
     justify-content: center;
     align-items: center;
     width: 100px;
+}
+.j-between{ justify-content: space-between; }
+.j-around{ justify-content: space-around; }
+.j-evenly{ justify-content: space-evenly; }
+
+.a-stretch{ align-items: stretch; }
+.h-150{ height: 150px; }
+.h_auto{ height: auto; }
+.flex-1{
+    background-color:lime;
+    flex: 1;
+}
+.flex-2{
+    background-color: orange;
+    flex: 2;
+}
+.flex-3{
+    background-color: blue;
+    flex: 3;
 }
