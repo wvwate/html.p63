@@ -30,3 +30,30 @@
     background-color: blue;
     flex: 3;
 }
+.card{
+    border-radius: 10px;
+    box-shadow: 0 3px 3px 2px #bbb;
+    height: 350px;
+     width: 250px;
+}
+.card-image{
+background-color:chocolate;
+border-radius: 10px 10px 0 0;
+height:40%;
+widht:100%;
+}
+.card-headline{
+
+}
+.card-subhead{
+
+}
+.card-text{
+
+}
+.card-footer{
+
+}
+.card-button{
+
+}
