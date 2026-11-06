@@ -1,4 +1,4 @@
-.container{
+
 .container{
     border: 2px solid salmon;
     display:flex;/*режим флекс-контейнера*/
@@ -54,3 +54,33 @@
 .a-center{
     align-items: center;
 }
+.card{
+border-radius: 10px;
+box-shadow: 0 3px 3px 2px #bbb;
+display:flex;
+flex-direction: column;
+height:350px;
+width:250px;
+}
+.card-image{
+    background-color: chocolate;
+    border-radius: 10px 10px 0px 0;
+    height: 40%;
+    width:auto;
+}
+.card-headline{
+    font-size:medium
+}
+
+.card-headline{
+    font-size:xx-large;
+    padding-top:14px;
+}
+.card-text{
+    padding-top:14px
+}
+.card-footer{
+    display:flex;
+    justify-content:end;
+}
+
