@@ -1,3 +1,17 @@
+.page-header{
+    font-size: 4vw;
+}
+
+.cards-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px  2%;
+    justify-content: center; 
+    margin: 10px 10%;
+}
+
+
 .card {
     border-radius: 10px;
     box-shadow: 0 3px 3px 2px #bbb;
@@ -16,21 +30,37 @@
 .card-headline, .card-subhead, .card-text {
     padding-left: 10px;
     padding-right: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .card-headline {
     font-size: xx-large;
     padding-top: 7px;
+    white-space: nowrap;
 }
 .card-subhead {
     font-size: x-large;
+    white-space: nowrap;
+}
+.spacer{
+    flex: 1;
 }
 .card-text {
     flex: 1;
     padding-top: 14px;
+    display: -webkit-box ;
+    -webkit-box-orient: vertical;
+    -webki-line-clamp:2;
+    line-clamp: 2;
+    overflow: hidden;
+    line-height: 20px;
+    max-height: 40px;
 }
 .card-footer {
     display: flex;
     justify-content: end;
+    justify-content: space-between;
     margin: 8px 10px;
 }
 .card-button {
@@ -39,8 +69,36 @@
     font-size: x-large;
 }
 .card-button:hover {
-    border: 2px solid #ddd;
+    background-color: #ddd;
 }
 .card-button:active {
     border: 2px solid #aaa;
+}
+.card-price {
+    display: flex;
+    flex-direction: column;
+}
+.card-price-discount {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.card-price-old {
+    color: #bebebe;
+    font-size: small;
+    text-decoration: line-through;
+}
+.card-price-actual {
+    color: #e05252;
+    font-size: large;
+    font-weight: 700;
+}
+.card-dicount-percent {
+    background-color: #e05252;
+    border-radius: 1em;
+    color: snow;
+    font-size: small;
+    font-weight: 600;
+    padding: 1px 3px;
 }
