@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .page-header {
     font-size: 4vw;
 }
@@ -9,6 +10,22 @@
     justify-content: center;
     margin: 10px 10%;
 }
+=======
+.page-header{
+    font-size: 4vw;
+}
+
+.cards-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px  2%;
+    justify-content: center; 
+    margin: 10px 10%;
+}
+
+
+>>>>>>> 5dc530a40f756b498ac7515d0fe191dab9194394
 .card {
     border-radius: 10px;
     box-shadow: 0 3px 3px 2px #bbb;
@@ -31,9 +48,18 @@
     padding-left: 10px;
     padding-right: 10px;
     text-overflow: ellipsis;
+<<<<<<< HEAD
 }
 .card-headline {
     font-size: xx-large;
+=======
+    overflow: hidden;
+    white-space: nowrap;
+}
+.card-headline {
+    font-size: xx-large;
+    padding-top: 7px;
+>>>>>>> 5dc530a40f756b498ac7515d0fe191dab9194394
     white-space: nowrap;
 }
 .card-subhead {
@@ -41,7 +67,11 @@
     font-size: x-large;
     white-space: nowrap;
 }
+<<<<<<< HEAD
 .spacer {
+=======
+.spacer{
+>>>>>>> 5dc530a40f756b498ac7515d0fe191dab9194394
     flex: 1;
 }
 .card-text {
@@ -53,9 +83,20 @@
     line-height: 20px;
     max-height: 40px;
     padding-top: 14px;
+    display: -webkit-box ;
+    -webkit-box-orient: vertical;
+    -webki-line-clamp:2;
+    line-clamp: 2;
+    overflow: hidden;
+    line-height: 20px;
+    max-height: 40px;
 }
 .card-footer {
     display: flex;
+<<<<<<< HEAD
+=======
+    justify-content: end;
+>>>>>>> 5dc530a40f756b498ac7515d0fe191dab9194394
     justify-content: space-between;
     margin: 8px 10px;
 }
