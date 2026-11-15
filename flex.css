@@ -30,23 +30,21 @@
 .a-center   { align-items: center; }
 .a-baseline { align-items: baseline; }
 
-/* для stretch и baseline фиксированная высота .item мешает */
+
 .a-stretch .item,
 .a-baseline .item {
     height: auto;
 }
 
-/* разная высота, чтобы было видно разницу (после .item!) */
 .s1 { height: 40px; }
 .s2 { height: 70px; }
 .s3 { height: 100px; }
 
-/* разный шрифт для baseline */
+
 .f1 { font-size: 16px; }
 .f2 { font-size: 32px; }
 .f3 { font-size: 48px; }
 
-/* карточки (для другого задания, оставила как было) */
 .card {
     border-radius: 10px;
     box-shadow: 0 3px 3px 2px #bbb;
@@ -56,19 +54,34 @@
     width: 250px;
 }
 .card-image {
-    background-color: chocolate;
     border-radius: 10px 10px 0 0;
     height: 40%;
-    width: auto;
+    width: 100%;
+    object-fit: cover; 
+}
+.card-body {
+    flex: 1; 
+    padding: 0 14px;
 }
 .card-headline {
-    font-size: xx-large;
-    padding-top: 14px;
+    font-size: x-large;
+    margin: 14px 0 0;
 }
 .card-text {
-    padding-top: 14px;
+    padding-top: 10px;
+    margin: 0;
 }
 .card-footer {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 14px;
 }
+.btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-buy { background-color: tomato; color: white; }
+.btn-fav { background-color: #eee; }

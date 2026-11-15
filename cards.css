@@ -1,3 +1,14 @@
+.page-header {
+    font-size: 4vw;
+}
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px 2%;
+    justify-content: center;
+    margin: 10px 10%;
+}
 .card {
     border-radius: 10px;
     box-shadow: 0 3px 3px 2px #bbb;
@@ -8,39 +19,92 @@
 }
 .card-image {
     background-color: chocolate;
-    /*             LT   RT  RB  LB    */
-    border-radius: 10px 10px 0px 0;
+    border-radius: 10px 10px 0 0;
+    display: block;
+    flex-shrink: 0;
     height: 40%;
+    object-fit: cover;
     width: 100%;
 }
 .card-headline, .card-subhead, .card-text {
+    overflow: hidden;
     padding-left: 10px;
     padding-right: 10px;
+    text-overflow: ellipsis;
 }
 .card-headline {
     font-size: xx-large;
-    padding-top: 7px;
+    white-space: nowrap;
 }
 .card-subhead {
+    color: #f0a500;
     font-size: x-large;
+    white-space: nowrap;
+}
+.spacer {
+    flex: 1;
 }
 .card-text {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
     flex: 1;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    line-height: 20px;
+    max-height: 40px;
     padding-top: 14px;
 }
 .card-footer {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     margin: 8px 10px;
 }
+.card-buttons {
+    align-items: flex-end;
+    display: flex;
+    gap: 4px;
+}
 .card-button {
+    background-color: transparent;
     border: 2px solid transparent;
     border-radius: 5px;
+    cursor: pointer;
     font-size: x-large;
 }
+.card-button-buy {
+    font-size: medium;
+}
 .card-button:hover {
-    border: 2px solid #ddd;
+    background-color: #ddd;
 }
 .card-button:active {
     border: 2px solid #aaa;
+}
+.card-price {
+    display: flex;
+    flex-direction: column;
+}
+.card-price-discount {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.card-price-old {
+    color: #bebebe;
+    font-size: small;
+    text-decoration: line-through;
+}
+.card-price-actual {
+    color: #e05252;
+    font-size: large;
+    font-weight: 700;
+}
+.card-dicount-percent {
+    background-color: #e05252;
+    border-radius: 1em;
+    color: snow;
+    font-size: small;
+    font-weight: 600;
+    padding: 1px 3px;
 }
